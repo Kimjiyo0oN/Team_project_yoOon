@@ -1,0 +1,80 @@
+body, main{
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+.managerHeader-gnb{
+    min-width: 988px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2d33;
+    position: relative;
+    z-index: 110;
+    width:100%;
+    height: 36px;
+    align-content: center;
+}
+
+.managerHeader-gnb > .tit_area{
+    display: flex;
+    align-content: center;
+    width: 100%;
+    float: left;
+    margin: 5px 0 0 13px;
+   
+}
+
+div.tit_area > h1,p{
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+
+.go_nvr .go_adm .title {
+    display: inline;
+    /* overflow: hidden; */
+    width: 54px;
+    flex-wrap: nowrap;
+}
+
+.tit_area a{
+    text-decoration: none;
+}
+
+a.go_nvr{
+    font-weight: bolder;
+    color: blueviolet;
+    font-size: 15px;
+}
+
+a.go_adm{
+    color: white;
+    font-size: 13px;
+    margin-left: 4px;
+}
+
+a.title{
+    font-size: 12px;
+    display: inline-block;
+    padding: 0px 2px;
+    height: 14px;
+    color: #8c8e92;
+}
+
