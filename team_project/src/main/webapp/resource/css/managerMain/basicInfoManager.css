@@ -59,11 +59,15 @@ body{
 
 
 /* menuSub 서브 네비 */
+
 .basicInfoMain{
+    box-sizing: content-box;
+    display: inline-flex;
+    flex-direction: column;
     z-index: 20;
     width: 920px;
     height: 100%;
-    padding: 138px 0 123px;
+    padding: 0 0 123px;
     margin: 0px auto;  
 }
 
@@ -72,9 +76,16 @@ body{
 }
 
 .infoMainFromtitle{
+    display: inline-block;
+    width: 920;
+
     height: 31px;
     border-bottom: 3px solid #565b62;
-    padding-top: 28px;
-    z-index: 30;
 }
+
+.infoMainFromtitle >a{
+    
+    padding-top: 28px;
+}
+
 
