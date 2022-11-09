@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내일로, 기차로! 카페 기본정보</title>
-    <link rel="shortcut icon" href="/team_project/src/main/webapp/resource/images/free-icon-train.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/team_project/src/main/webapp/resources/images/free-icon-train.png" type="image/x-icon">
     <a href="https://www.flaticon.com/kr/free-icons/" title="기차 아이콘" id="free-icon-train">기차 아이콘  제작자: Shahid-Mehmood - Flaticon</a>
-    <link rel="stylesheet" href="../../resource/css/managerMain/basicInfoManager.css">
+    <link rel="stylesheet" href="../../resources/css/managerMain/basicInfoManager.css">
     <style>
         #free-icon-train{
         display: none;
@@ -52,25 +52,25 @@
                     <div class="nav_menu">
                         <ul>
                             <li clss="managerHome">
-                                <a href="../managerMain/managerMain.html"><img src="../../resource/images/free-icon-house-1835281.png">관리홈</a>
+                                <a href="../managerMain/managerMain.html"><img src="../../resources/images/free-icon-house-1835281.png">관리홈</a>
                             </li>
                             <li>
-                                <a href="../managerMain/basicInfoManager.html"><img src="../../resource/images/settings.png">카페운영</a>
+                                <a href="../managerMain/basicInfoManager.html"><img src="../../resources/images/settings.png">카페운영</a>
                             </li>
                             <li>
-                                <a href="#"><img src="../../resource/images/free-icon-friends-7218085.png">멤버•스텝</a>
+                                <a href="../managerMain/totalMemberManager.html"><img src="../../resources/images/free-icon-friends-7218085.png">멤버•스탭</a>
                             </li>
                             <li>
-                                <a href="#"><img src="../../resource/images/free-icon-add-friend-4458569.png">가입•등급</a>
+                                <a href="../managerMain/joinMemberManager.html"><img src="../../resources/images/free-icon-add-friend-4458569.png">가입•등급</a>
                             </li>
                             <li>
-                                <a href="../managerMain/menuManager.html"><img src="../../resource/images/free-icon-menu-2550222.png">메뉴</a>
+                                <a href="../managerMain/menuManager.html"><img src="../../resources/images/free-icon-menu-2550222.png">메뉴</a>
                             </li>
                             <li>
-                                <a href="#"><img src="../../resource/images/free-icon-edit-4386594.png">글•글양식</a>
+                                <a href="#"><img src="../../resources/images/free-icon-edit-4386594.png">글•글양식</a>
                             </li>
                             <li>
-                                <a href=""><img src="../../resource/images/free-icon-spam-alert-5628585.png">스팸•삭제글</a>
+                                <a href=""><img src="../../resources/images/free-icon-spam-alert-5628585.png">삭제글</a>
                             </li>
                         </ul>
                     </div>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="infoTablerow2">
                             <div class="infoTablerow2Box">
-                                <p id="infoCafeAddress">https://cafe.naver.com/khcafetest</p>
+                                <p class="infoCafeAddress" id="infoCafeAddress">https://cafe.naver.com/khcafetest</p>
                             </div>
                         </div>
                     </div>
@@ -111,10 +111,10 @@
                         </div>
                         <div class="infoTablerow2">
                             <div class="infoTablerow2Box">
-                                <p id="infoCafeName">내일로, 기차로! 카페</p>
-                                <div id="infoCafeDateBox">
-                                    <p id ="infoCafeDateText">카페 개설일 :</p>
-                                    <p id="infoCafeDate">2022년 10월 14일</p>
+                                <p class ="infoCafeName" id="infoCafeName">내일로, 기차로! 카페</p>
+                                <div class="infoCafeDateBox" id="infoCafeDateBox">
+                                    <p class="infoCafeDateText" id ="infoCafeDateText">카페 개설일 :</p>
+                                    <p class="infoCafeDate" id="infoCafeDate">2022년 10월 14일</p>
                                 </div>
                             </div>
                         </div>
@@ -125,11 +125,11 @@
                         </div>
                         <div class="infoTablerow2">
                             <div class="infoTablerow2Box">
-                                <div id="infoCafeProfileBox">
-                                    <div id="infoCafeProfil">
-                                        <img src="../../resource/images/고양아.jpg" alt="카페아이콘">
+                                <div class ="infoCafeProfileBox" id="infoCafeProfileBox">
+                                    <div class="infoCafeProfil" id="infoCafeProfil">
+                                        <img src="../../resources/images/고양아.jpg" alt="카페아이콘">
                                     </div>
-                                    <div id="infoCafeProfilContent">
+                                    <div class="infoCafeProfilContent" id="infoCafeProfilContent">
                                         <P>· 카페 프로필에서 우리 카페를 표현할 카페 아이콘을 등록해주세요.</P>
                                         <P>· 등록하신 아이콘은 모바일웹, 카페앱 및 PC 카페 > 네임카드 등에 활용됩니다.</P>
                                         <P>(150PX150PX / 500KB미만)</P>
@@ -146,8 +146,10 @@
                         </div>
                         <div class="infoTablerow2">
                             <div class="infoTablerow2Box">
-                                <P>공개</P>
-                                <P>검색, 카페 주소 등을 통해 카페에 방문할 수 있습니다.</P>
+                                <div class="infocharacter">
+                                    <P>공개</P>
+                                    <P>· 검색, 카페 주소 등을 통해 카페에 방문할 수 있습니다.</P>
+                                </div>
                             </div>
                             
                         </div>
@@ -173,7 +175,9 @@
                             </div>
                         </div>
                     </div>
-                    <button>저장하기</button>
+                    <div class="infoButton">
+                        <button>저장하기</button>
+                    </div>
                 </fieldset>
             </form>
         </div>

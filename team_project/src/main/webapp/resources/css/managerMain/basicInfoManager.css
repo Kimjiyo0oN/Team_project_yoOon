@@ -96,11 +96,11 @@ body{
 }
 
 .infofieldset .infoTablerow1 {
-    flex-basis: 30%;
+    flex-basis: 20%;
 }
 
 .infofieldset .infoTablerow2 {
-    flex-basis: 70%;
+    flex-basis: 80%;
 }
 
 .infofieldset .infoTablerow2 img{
@@ -138,24 +138,24 @@ body{
     margin-inline-end: 0px;
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeAddress{
+.basicInfoMain .infoTablerow2Box .infoCafeAddress{
     font-family: tahoma;
     font-size: 18px;
     font-weight: 700;
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeName{
+.basicInfoMain .infoTablerow2Box .infoCafeName{
     font-size: 16px;
     font-weight: 700;
     color: #272727;
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeDateBox{
+.basicInfoMain .infoTablerow2Box .infoCafeDateBox{
     display: inline-flex;
     position: row;
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeDateText{
+.basicInfoMain .infoTablerow2Box .infoCafeDateText{
     /* display: inline-flex;
     position: row; */
     font-weight: 400;
@@ -163,7 +163,7 @@ body{
 
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeDate{
+.basicInfoMain .infoTablerow2Box .infoCafeDate{
     padding-left: 3px;
     color: #ff7200!important;
     font-weight: 400;
@@ -171,22 +171,65 @@ body{
 }
 
 
-.basicInfoMain .infoTablerow2Box #infoCafeProfileBox{
+.basicInfoMain .infoTablerow2Box .infoCafeProfileBox{
     font-size: 12px;
     display: inline-flex;
     position: row;
 }
 
-.basicInfoMain .infoTablerow2Box #infoCafeProfil{
+.basicInfoMain .infoTablerow2Box .infoCafeProfil{
     padding-right: 10px;
 }
 
 
-.basicInfoMain .infoTablerow2Box #infoCafeProfilContent{
+.basicInfoMain .infoTablerow2Box .infoCafeProfilContent{
     text-align: center;
 }
 
-#infoCafeProfilContent p:nth-of-type(1){
+.infoCafeProfilContent p:nth-of-type(1){
+    font-weight: bold;
     font-size: 12px;
 }
 
+.infoCafeProfilContent p:nth-of-type(2){
+    color: #959699;
+    font-size: 12px;
+}
+.infoCafeProfilContent p:nth-of-type(3){
+    font-size: 12px;
+    padding-left: 10px;
+    color: #2e9901!important;
+}
+
+.infoTablerow2 > .infoTablerow2Box{
+    font-size: 12px;
+}
+
+.infoTablerow2Box > .infocharacter p:nth-of-type(1){
+    font-weight: bold;
+}
+
+.infoTablerow2Box > .infocharacter  p:nth-of-type(2){
+    color: #959699;
+}
+
+.infoButton{
+    display: flex;
+    justify-content: center;
+}
+
+
+button{
+    display: inline-block;
+    height: 32px;
+    padding: 0 23px 0 24px;
+    background-color: rgb(10, 10, 59);
+    border-radius: 10%;
+    margin: 25px auto 0;
+    font-size: 12px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
