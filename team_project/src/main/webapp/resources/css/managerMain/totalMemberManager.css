@@ -171,35 +171,34 @@ body{
 
 .btn_type2 > span {
   font-size: 12px;
-  display: inline-block;
-  height: 23px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   padding: 0 7px;
-  /* background: url(https://cafe.pstatic.net/img/manage/sp_btn_141125.gif) no-repeat 100% -256px; */
-  /* line-height: 25px; */
+  font-size: 12px;
+  font-family:'돋움',Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 
 .btn_type2 {
   border: 1px solid black;
   border-radius: 6%;
-  display: inline-block;
+  display: inline-flex;
   height: 23px;
   padding-left: 1px;
   color: #404040;
   text-decoration: none !important;
   cursor: pointer;
   vertical-align: middle;
-}
-
-.btn_type2 > span {
-  font-size: 12px;
-  font-family:'돋움',Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 26px;
+  align-items: center;
 }
 
 .btn_type2 .bu {
   font-size: 11px;
   height: auto;
   font-family:'돋움',Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 3px;
 }
 
 /*  */
@@ -254,6 +253,11 @@ body{
 .srch_info:nth-of-type(2){
   display: none;
 }
+
+.srch_info select {
+  vertical-align: middle;
+}
+
 /*  */
 
 /*  */

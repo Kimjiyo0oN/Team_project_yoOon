@@ -16,21 +16,51 @@ detailbutton.addEventListener("click",function(){
 
 });
 
-const detailchecked = document.querySelector("input[name='srch_detail']:checked");
+//
 
 const srch_infoDisplay = document.querySelectorAll(".srch_info"); 
 
-detailchecked.addEventListener("change",function(){
+/* const detailchecked = document.querySelector("input[name='srch_detail']:checked"); */
+
+
+
+document.querySelectorAll("input[name='srch_detail']")[0].addEventListener("change",function(){
+  
+  const detailchecked = document.querySelector("input[name='srch_detail']:checked");
+
   if(detailchecked.value == "postspace"){
+    console.log(srch_infoDisplay[0]);
     srch_infoDisplay[0].style.display ="block";
     srch_infoDisplay[1].style.display = "none";
     // srch_infoDisplay[2].style.display = "none";
     // srch_infoDisplay[3].style.display = "none";
   }
+  // if(this.value == "commentspace"){
+  //   console.log(srch_infoDisplay[1]);
+  //   srch_infoDisplay[0].style.display = "none";
+  //   srch_infoDisplay[1].style.display = "block";
+  //   // srch_infoDisplay[2].style.display = "none";
+  //   // srch_infoDisplay[3].style.display = "none";
+  // }
+});
+
+// document.querySelector('input[name="srch_detail"]').checked;
+document.querySelectorAll("input[name='srch_detail']")[1].addEventListener("change",function(){
+  
+  const detailchecked = document.querySelector("input[name='srch_detail']:checked");
+
   if(detailchecked.value == "commentspace"){
-    srch_infoDisplay[0].style.display = "none";
+    console.log(srch_infoDisplay[1]);
+    srch_infoDisplay[0].style.display ="none";
     srch_infoDisplay[1].style.display = "block";
     // srch_infoDisplay[2].style.display = "none";
     // srch_infoDisplay[3].style.display = "none";
   }
+  // if(this.value == "commentspace"){
+  //   console.log(srch_infoDisplay[1]);
+  //   srch_infoDisplay[0].style.display = "none";
+  //   srch_infoDisplay[1].style.display = "block";
+  //   // srch_infoDisplay[2].style.display = "none";
+  //   // srch_infoDisplay[3].style.display = "none";
+  // }
 });
