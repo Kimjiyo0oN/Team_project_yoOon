@@ -198,7 +198,8 @@ body{
   font-size: 11px;
   height: auto;
   font-family:'돋움',Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 3px;
+  padding-top: 1px;
+  padding-left: 2px;
 }
 
 /*  */
@@ -225,6 +226,7 @@ body{
 .srch_detail li > label{
   padding-left: 5px;
 }
+
 /* 멤버 상세 검색 */
 
 
@@ -250,12 +252,37 @@ body{
   height:19px;
   margin-left:4px;
 }
-.srch_info:nth-of-type(2){
+.srch_info:nth-of-type(2), .srch_info:nth-of-type(3),
+.srch_info:nth-of-type(4){
   display: none;
 }
 
 .srch_info select {
   vertical-align: middle;
+}
+
+.srch_info .txt2 {
+  margin-right: 8px;
+}
+.srch_info .txt, .srch_info label {
+vertical-align: -1px;
+}
+
+input.text {
+height: 19px;
+line-height: 19px;
+border: 1px solid;
+border-color: #b6b6b6 #d7d7d7 #d7d7d7 #b6b6b6;
+vertical-align: middle;
+}
+
+._entryType{
+  width:73px;
+  height:19px;
+  margin-left:4px
+}
+.date, .cal {
+  width:100px;
 }
 
 /*  */

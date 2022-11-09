@@ -188,6 +188,40 @@
                       <span class="txt">인 멤버</span>
                       <a href="#" class="btn_type2_gn _submitComment _submitDetail" searchtype="commentspace"><span class="_submitComment _submitDetail" searchtype="commentspace">검색</span></a>
                     </div>
+                    <!-- 방문수 검색  -->
+                    <div class="srch_info">
+                      <input type="hidden" name="countBy" class="_countBy" value="2">
+                      <select class="_period">
+                      <option value="0">전체기간</option>
+                      <option value="1">최근1개월</option>
+                      </select>
+                      <span class="txt txt2 _txtPeriod">동안</span>
+                      <label for="_visitCountInput">방문수</label>
+                      <input type="text" class="text _visitCount _count" id="_visitCountInput" maxlength="5" value="0"> <span class="txt">회</span>
+                      <select  class="_above">
+                      <option value="1">이상</option>
+                      <option value="0">이하</option>
+                      </select>
+                      <span class="txt">인 멤버</span>
+                      <a href="#" class="btn_type2_gn _submitVisit _submitDetail" searchtype="visitspace"><span class="_submitVisit _submitDetail" searchtype="visitspace">검색</span></a>
+                    </div>
+                    <!-- 가입/최종방문일 -->
+                    <div class="srch_info">
+                      <span class="date _startDate" id="_startDateButton">
+                        <input type="date" class="text cal _startDate" id="_startDateInput" max="2022-11-10">
+                      </span>
+									    <span class="txt">부터</span>
+									    <span class="date _endDate" id="_endDateButton">
+                        <input type="date" class="text cal _endDate" id="_endDateInput" >
+                      </span>
+									    <span class="txt">까지</span>
+                      <select  class="_entryType">
+                        <option value="0">가입</option>
+                        <option value="1">최종방문</option>
+                      </select>
+                      <span class="txt">한 멤버</span>
+                      <a href="#" class="btn_type2_gn _submitDate" searchtype="datespace"><span class="_submitDate" searchtype="datespace">검색</span></a>
+                    </div>
                   </div>
                   <!-- 멤버 상세 검색 -->
                 </div>
