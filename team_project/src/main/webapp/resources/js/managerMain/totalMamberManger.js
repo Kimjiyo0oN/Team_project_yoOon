@@ -91,3 +91,72 @@ var timeOff = new Date().getTimezoneOffset()*60000; // 분단위를 밀리초로
 var today = new Date(now_utc-timeOff).toISOString().split("T")[0];
 document.getElementById("_startDateInput").setAttribute("max", today);
 document.getElementById("_endDateInput").setAttribute("max", today);
+
+//테이블 처음 회원조회
+function totalMemberList(){
+  const tbody = document.getElementById("selecttbody");
+
+  //tbody 이전 내용 삭제
+  tbody.innerHTML = "";
+
+
+  $.ajax({
+    url: "/totalMemberList",
+    dataType: "JSON",
+    sucess: memberList => {
+      console.log(memberList);
+
+      for(let member of memberList){
+        //_checkable
+        /* tr > td */
+        const tr =document.createElement("tr");
+        tr.setAttribute("memberid", member.)
+
+        //체크박스 td class tc
+        const td = document.createElement("td");
+        const inputCheckBox = document.createElement("input");
+
+        //아이디 이메일 
+        const td1 = document.createElement("td");
+        const div_nick_area = document.createElement("div");
+        /* div > span */
+        const spanImg = document.createElement("span");
+        /* span > img */
+        const td1Img = document.createAttribute("img");
+        /* div > a */
+        const td1A = document.createAttribute("a");
+
+        //등급
+        const td2 = document.createAttribute("td");
+        /* span태그 안에 새내기 등급 들어감 */
+        const td2SpanImg = document.createElement("span");
+        /* span > img */
+        const td2Img = document.createAttribute("img");
+
+        //가입일 
+        const td3 = document.createAttribute("td");
+        const td3Span = document.createElement("span");
+
+        //최근로그인이력
+        const td4 = document.createAttribute("td");
+        const td4Span = document.createElement("span");
+
+        //방문수
+        const td5 = document.createAttribute("td");
+        const td5Span = document.createElement("span");
+
+        //게시글수
+        const td6 = document.createAttribute("td");
+        const td6Span = document.createElement("span");
+
+        //댓글수
+        const td7 = document.createAttribute("td");
+        const td7Span = document.createElement("span");
+
+
+
+
+      }
+    }
+  });
+}
